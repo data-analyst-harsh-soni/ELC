@@ -28,8 +28,9 @@ body {
 .header {
     background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
     color: var(--white);
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
 }
 
 .header-content {
@@ -39,6 +40,14 @@ body {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+
+/* style.css mein add karein */
+.sticky-top-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* Background color zaroori hai */
 }
 
 .emblem {
@@ -54,6 +63,33 @@ body {
     color: var(--primary-blue);
     flex-shrink: 0;
 }
+
+.emblem {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #000080; /* Navy Blue Text */
+    border-radius: 50%; /* Circle banata hai */
+    
+    /* Tricolor Border Effect */
+    border-top: 4px solid #FF9933;    /* Saffron */
+    border-bottom: 4px solid #138808; /* Green */
+    border-left: 4px solid #000080;   /* Navy */
+    border-right: 4px solid #000080;  /* Navy */
+    
+    /* Text Alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Font Styling */
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Thoda sa shadow utha hua dikhane ke liye */
+}
+
 
 .header-text h1 {
     font-family: 'Merriweather', serif;
@@ -106,7 +142,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 1rem 3rem;
 }
 
 /* Hero Section */
